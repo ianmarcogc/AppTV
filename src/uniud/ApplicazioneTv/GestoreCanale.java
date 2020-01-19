@@ -13,7 +13,7 @@ public class GestoreCanale extends Gestore<Canale>{
      * @param numero numero selezionato dal telecomando
      */
     void sceltaCanale(int numero){
-        while ()
+        while ()//aggiungere iteratore
     }
     void sceltaCanale(int numero, int monitor){
 
