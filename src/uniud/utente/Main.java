@@ -1,8 +1,11 @@
 package uniud.utente;
 
+import uniud.ApplicazioneTv.Applicazione;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Applicazione app = new Applicazione();
+
     }
 }

@@ -8,4 +8,11 @@ public class Canale {
     private int numero;
     private ArrayList<Trasmissione> trasmissioni = new ArrayList<Trasmissione>();
 
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 }
