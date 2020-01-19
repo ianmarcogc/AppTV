@@ -9,7 +9,7 @@ public class ProduttoreGestoreCanali implements Produttore {
 
     /**
      * Produce un gestore di men�. (Observer)
-     * @return una nuova istanza di un gestore di comande
+     * @return una nuova istanza di un gestore di canali
      */
     @Override
     public GestoreCanale produci() {

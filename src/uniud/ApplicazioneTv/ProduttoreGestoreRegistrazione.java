@@ -1,13 +1,13 @@
 package uniud.ApplicazioneTv;
 /**
- * Rappresenta un produttore di gestori di registratori
+ * Rappresenta un produttore di gestori di registrazioni
  *
  */
 public class ProduttoreGestoreRegistrazione implements Produttore {
 
     /**
      * Produce un gestore di men�. (Observer)
-     * @return una nuova istanza di un gestore di comande
+     * @return una nuova istanza di un gestore di registrazioni
      */
     @Override
     public GestoreRegistrazione produci() {
