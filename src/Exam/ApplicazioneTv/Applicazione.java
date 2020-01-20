@@ -9,7 +9,7 @@ public class Applicazione implements Observable{
 
     private GestoreCanale gestoreCanale;
 
-    private Observer observerCanale, observerRegistratore;
+    private Observer observer;
 
     public Applicazione() {
         try {
@@ -22,31 +22,30 @@ public class Applicazione implements Observable{
     }
 
     @Override
-    public void addObserver(Observer obsCanale,Observer obsRegistratore) {
-        observerCanale = obsCanale;
-        obsRegistratore = obsRegistratore;
+    public void addObserver(Observer obs) {
+        observer = obs;
     }
 
     public void aggiornaCanale(int numero){
         Canale canaleScelto = gestoreCanale.sceltaCanale(numero);
-        observerCanale.aggiornaCanale(canaleScelto);
+        observer.aggiornaCanale(canaleScelto);
     }
 
     public void aggiornaCanale(int numero, int monitor){
         Canale canaleScelto = gestoreCanale.sceltaCanale(numero);
-        observerCanale.aggiornaCanale(canaleScelto,monitor);
+        observer.aggiornaCanale(canaleScelto,monitor);
     }
 
     public void avviaRegistrazione(Trasmissione trasmissione){
-        observerRegistratore.avviaRegistrazione(trasmissione);
+        observer.avviaRegistrazione(trasmissione);
     }
 
     public void annullaRegistrazione(Trasmissione trasmissione){
-        observerRegistratore.annullaRegistrazione(trasmissione);
+        observer.annullaRegistrazione(trasmissione);
     }
 
     public boolean isPrenotata(Trasmissione trasmissione){
-        return (observerRegistratore.isPrenotata(trasmissione));
+        return (observer.isPrenotata(trasmissione));
     }
 
     void cambiaTrasmissione(Canale canale, Trasmissione trasmissione1, Trasmissione trasmissione2){
