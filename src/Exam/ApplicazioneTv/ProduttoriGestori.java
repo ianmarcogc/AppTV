@@ -1,6 +1,7 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
-import uniud.ApplicazioneTv.eccezioni.TipoGestoreNonSupportato;
+import Exam.ApplicazioneTv.eccezioni.TipoGestoreNonSupportato;
+import Exam.Gestori;
 
 /**
  * Rappresenta un "produttore di produttori" di gestori

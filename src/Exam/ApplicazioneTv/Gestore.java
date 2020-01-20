@@ -1,6 +1,6 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
-import uniud.ApplicazioneTv.eccezioni.ImpossibileAggiungereAGestore;
+import Exam.ApplicazioneTv.eccezioni.ImpossibileAggiungereAGestore;
 
 /**
  * Rappresenta un'entit� che esegue operazion su un insieme di elementi.

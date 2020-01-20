@@ -1,4 +1,4 @@
-package uniud.ApplicazioneTv.eccezioni;
+package Exam.ApplicazioneTv.eccezioni;
 /**
  * Eccezione lanciata nel caso di creazione di un gestore
  * non definito nella lista dei gestori supportati.

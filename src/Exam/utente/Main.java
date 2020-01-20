@@ -1,6 +1,4 @@
-package uniud.utente;
-
-import uniud.ApplicazioneTv.Applicazione;
+package Exam.utente;
 
 public class Main {
 

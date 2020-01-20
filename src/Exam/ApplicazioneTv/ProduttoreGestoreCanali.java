@@ -1,4 +1,4 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
 /**
  * Rappresenta un produttore di gestori di canali

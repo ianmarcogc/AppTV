@@ -1,10 +1,8 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
-import uniud.ApplicazioneTv.eccezioni.ImpossibileAggiungereAGestore;
+import Exam.ApplicazioneTv.eccezioni.ImpossibileAggiungereAGestore;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class GestoreCanale extends Gestore<Canale>{
 
@@ -40,7 +38,6 @@ public class GestoreCanale extends Gestore<Canale>{
     }
 
     public int getPosition(Canale daTrovare){
-        int pos;
         CanaleIterator canaleIterator = new CanaleIterator(canali);
         while (canaleIterator.hasNext() || canaleIterator.getCanale() != daTrovare){
         }

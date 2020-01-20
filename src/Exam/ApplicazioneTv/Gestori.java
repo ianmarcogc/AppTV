@@ -1,4 +1,4 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
 /**
  * Tipi gestibili attraverso un gestore

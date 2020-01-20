@@ -1,4 +1,4 @@
-package uniud.ApplicazioneTv.eccezioni;
+package Exam.ApplicazioneTv.eccezioni;
 
 /**
  * Eccezione generica nel caso di impossibilit� di aggiunta di un

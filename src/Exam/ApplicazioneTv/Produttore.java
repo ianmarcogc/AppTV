@@ -1,4 +1,4 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
 /**
  * Rappresenta un generico produttore di oggetti

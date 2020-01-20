@@ -1,8 +1,8 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
-import uniud.ApplicazioneTv.eccezioni.ImpossibileAggiungereAGestore;
+import Exam.ApplicazioneTv.eccezioni.ImpossibileAggiungereAGestore;
 
-public class GestoreRegistrazione extends Gestore<Registratore>{
+public class GestoreRegistrazione extends Gestore<Registratore> {
     @Override
     void aggiungi(Registratore nuovo, int pos) throws ImpossibileAggiungereAGestore {
 

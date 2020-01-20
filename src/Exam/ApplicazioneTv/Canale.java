@@ -1,7 +1,6 @@
-package uniud.ApplicazioneTv;
+package Exam.ApplicazioneTv;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Canale {
     private String nome;
@@ -22,15 +21,14 @@ public class Canale {
         this.numero = numero;
     }
 
-    /*public CanaleIterator iterator(){
-        return (new CanaleIterator(this));
-    }*/
-
     public void cambiaTrasmissione(Trasmissione trasmissione1, Trasmissione trasmissione2){
-
+        TrasmissioneIterator trasmissioneIterator = new TrasmissioneIterator(trasmissioni);
+        while (trasmissioneIterator.hasNext() || trasmissioneIterator.getTrasmissione() != trasmissione1){
+        }
+        trasmissioni.set(trasmissioneIterator.getPosition(),trasmissione2);
     }
 
     public void aggiungiTrasmissione(Trasmissione trasmissione) {
-
+        trasmissioni.add(trasmissione);
     }
 }
