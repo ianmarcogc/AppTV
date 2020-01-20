@@ -36,6 +36,16 @@ public class Applicazione implements Observable{
         observer.aggiornaCanale(canaleScelto,monitor);
     }
 
+    void cambiaTrasmissione(Canale canale, Trasmissione trasmissione1, Trasmissione trasmissione2){
+        gestoreCanale.cambiaTrasmissione(canale, trasmissione1, trasmissione2);
+    }
+    void aggiungiTrasmissione(Canale canale, Trasmissione trasmissione){
+        gestoreCanale.aggiungiTrasmissione(canale, trasmissione);
+    }
+    void cercaTrasmissione(/*QUERY*/){
+        gestoreCanale.cercaTrasmissione();
+    }
+
     public void avviaRegistrazione(Trasmissione trasmissione){
         observer.avviaRegistrazione(trasmissione);
     }
@@ -47,15 +57,4 @@ public class Applicazione implements Observable{
     public boolean isPrenotata(Trasmissione trasmissione){
         return (observer.isPrenotata(trasmissione));
     }
-
-    void cambiaTrasmissione(Canale canale, Trasmissione trasmissione1, Trasmissione trasmissione2){
-        gestoreCanale.cambiaTrasmissione(canale, trasmissione1, trasmissione2);
-    }
-    void aggiungiTrasmissione(Canale canale, Trasmissione trasmissione){
-        gestoreCanale.aggiungiTrasmissione(canale, trasmissione);
-    }
-    void cercaTrasmissione(/*QUERY*/){
-        gestoreCanale.cercaTrasmissione();
-    }
-
 }

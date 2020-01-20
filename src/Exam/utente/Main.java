@@ -9,5 +9,8 @@ public class Main {
         Applicazione app = new Applicazione();
         ApplicazioneClient cliente = new ApplicazioneClient(100, "italiano");
 
+        app.addObserver(cliente);
+
+
     }
 }

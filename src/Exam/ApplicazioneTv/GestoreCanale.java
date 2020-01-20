@@ -6,7 +6,12 @@ import java.util.ArrayList;
 
 public class GestoreCanale extends Gestore<Canale>{
 
-    ArrayList canali = new ArrayList<Canale>();
+    ArrayList canali;
+
+    public GestoreCanale(ArrayList canali) {
+        this.canali = canali;
+    }
+
     /**
      * Cambia il canale (Mutator)
      * @param numero numero selezionato dal telecomando

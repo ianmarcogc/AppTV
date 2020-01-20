@@ -1,7 +1,7 @@
 package Exam.ApplicazioneTv;
 
 import Exam.ApplicazioneTv.eccezioni.TipoGestoreNonSupportato;
-import Exam.Gestori;
+import Exam.ApplicazioneTv.Gestori;
 
 /**
  * Rappresenta un "produttore di produttori" di gestori
