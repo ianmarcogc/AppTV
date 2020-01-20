@@ -1,18 +1,16 @@
 package Exam.ApplicazioneTv;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Vector;
+import java.util.*;
 
 public class CanaleIterator implements Iterator<Canale> {
     private int current;
     final private Vector<Canale> elements;
-    CanaleIterator(ArrayList s){
+    CanaleIterator(ArrayList<Canale> s){
         if(s == null){
             throw new NullPointerException("Canale not null");
         }
-        this.elements = (Vector<Canale>) s.clone();
+        List<Canale> list = new Vector<Canale>(s);
+        this.elements = (Vector<Canale>) ((Vector<Canale>) list).clone();
         this.current = 0;
     }
 

@@ -44,7 +44,12 @@ public class GestoreCanale extends Gestore<Canale>{
 
     public int getPosition(Canale daTrovare){
         CanaleIterator canaleIterator = new CanaleIterator(canali);
-        while (canaleIterator.hasNext() || canaleIterator.getCanale() != daTrovare){
+        while (canaleIterator.hasNext()){
+            Canale c = canaleIterator.getCanale();//equals(daTrovare)
+            if(c.equals(daTrovare)){
+                return canaleIterator.getPosition();
+            }
+            canaleIterator.next();
         }
         return canaleIterator.getPosition();
     }

@@ -36,13 +36,14 @@ public class Applicazione implements Observable{
         observer.aggiornaCanale(canaleScelto,monitor);
     }
 
-    void cambiaTrasmissione(Canale canale, Trasmissione trasmissione1, Trasmissione trasmissione2){
+    public void cambiaTrasmissione(Canale canale, Trasmissione trasmissione1, Trasmissione trasmissione2){
         gestoreCanale.cambiaTrasmissione(canale, trasmissione1, trasmissione2);
+        System.out.println("dfgh");
     }
-    void aggiungiTrasmissione(Canale canale, Trasmissione trasmissione){
+    public void aggiungiTrasmissione(Canale canale, Trasmissione trasmissione){
         gestoreCanale.aggiungiTrasmissione(canale, trasmissione);
     }
-    void cercaTrasmissione(/*QUERY*/){
+    public void cercaTrasmissione(/*QUERY*/){
         gestoreCanale.cercaTrasmissione();
     }
 

@@ -17,10 +17,10 @@ public class ProduttoreGestoreCanali implements Produttore {
     @Override
     public GestoreCanale produci() {
         ArrayList canali = new ArrayList<Canale>();
-        LocalDateTime dateTime = LocalDateTime.now();
+        LocalDateTime dateTime = LocalDateTime.MIN;
         Canale canaleTemp;
         ArrayList trasmissioneTemp = new ArrayList<Trasmissione>();
-        trasmissioneTemp.add(0,new Trasmissione("CAMMELLI", "nessuna schedaInformativa", "italiano", null, Genere.INFORMAZIONI, dateTime.now()));
+        trasmissioneTemp.add(0,new Trasmissione("CAMMELLI", "nessuna schedaInformativa", "italiano", null, Genere.INFORMAZIONI, dateTime));
         for (int i = 0; i < 10; i++){
             canali.add(i, new Canale("canale"+i,i, trasmissioneTemp));
         }
