@@ -13,7 +13,6 @@ public class Applicazione implements Observable{
 
     public Applicazione() {
         try {
-            //design-pattern "Factory"
             gestoreCanale = (GestoreCanale) ProduttoriGestori.getProduttore(Gestori.CANALI).produci();
         } catch (TipoGestoreNonSupportato tgns) {
             Logger.getLogger(this.getClass().getName()).log(Level.WARNING, "Tipo gestore non supportato");
