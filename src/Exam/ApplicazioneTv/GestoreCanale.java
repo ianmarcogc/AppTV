@@ -18,7 +18,10 @@ public class GestoreCanale extends Gestore<Canale>{
      */
     Canale sceltaCanale(int numero){
         CanaleIterator canaleIterator = new CanaleIterator(canali);
-        while (canaleIterator.hasNext() || canaleIterator.getNumber() != numero){
+        while (canaleIterator.hasNext()){
+            if (canaleIterator.getNumber() == numero)
+                return canaleIterator.getCanale();
+            canaleIterator.next();
         }
         return canaleIterator.getCanale();
     }
@@ -45,7 +48,7 @@ public class GestoreCanale extends Gestore<Canale>{
     public int getPosition(Canale daTrovare){
         CanaleIterator canaleIterator = new CanaleIterator(canali);
         while (canaleIterator.hasNext()){
-            Canale c = canaleIterator.getCanale();//equals(daTrovare)
+            Canale c = canaleIterator.getCanale();
             if(c.equals(daTrovare)){
                 return canaleIterator.getPosition();
             }
@@ -64,4 +67,5 @@ public class GestoreCanale extends Gestore<Canale>{
     public void cercaTrasmissione() {
 
     }
+
 }

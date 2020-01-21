@@ -23,12 +23,22 @@ public class Canale {
 
     public void cambiaTrasmissione(Trasmissione trasmissione1, Trasmissione trasmissione2){
         TrasmissioneIterator trasmissioneIterator = new TrasmissioneIterator(trasmissioni);
-        while (trasmissioneIterator.hasNext() || trasmissioneIterator.getTrasmissione() != trasmissione1){
+        while (trasmissioneIterator.hasNext()){
+            if(trasmissioneIterator.getTrasmissione().equals(trasmissione1));{
+                trasmissioni.set(trasmissioneIterator.getPosition(),trasmissione2);
+            }
+            trasmissioneIterator.next();
         }
-        trasmissioni.set(trasmissioneIterator.getPosition(),trasmissione2);
     }
 
     public void aggiungiTrasmissione(Trasmissione trasmissione) {
         trasmissioni.add(trasmissione);
+    }
+
+    public boolean equals(Canale canale){
+        if(nome.equals(canale.nome) && numero == canale.numero){
+            return true;
+        }
+        return false;
     }
 }

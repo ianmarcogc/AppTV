@@ -1,9 +1,6 @@
 package Exam.ApplicazioneTv;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Vector;
+import java.util.*;
 
 public class TrasmissioneIterator implements Iterator<Trasmissione> {
     private int current;
@@ -12,7 +9,8 @@ public class TrasmissioneIterator implements Iterator<Trasmissione> {
         if(s == null){
             throw new NullPointerException("Trasmissione not null");
         }
-        this.elements = (Vector<Trasmissione>) s.clone();
+        List<Trasmissione> list = new Vector<Trasmissione>(s);
+        this.elements = (Vector<Trasmissione>) ((Vector<Trasmissione>) list).clone();
         this.current = 0;
     }
 

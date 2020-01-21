@@ -17,4 +17,11 @@ public class Trasmissione {
         this.genere = genere;
         this.dateTime = dateTime;
     }
+
+    public boolean equals(Trasmissione trasmissione){
+        if (titolo.equals(trasmissione.titolo) && schedaInformativa.equals(schedaInformativa)){
+            return true;
+        }
+        return false;
+    }
 }

@@ -2,7 +2,7 @@ package Exam.ApplicazioneTv;
 
 import java.util.*;
 
-public class CanaleIterator implements Iterator<Canale> {
+public class CanaleIterator<T> implements Iterator<Canale> {
     private int current;
     final private Vector<Canale> elements;
     CanaleIterator(ArrayList<Canale> s){
