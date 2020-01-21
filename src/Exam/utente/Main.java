@@ -14,6 +14,7 @@ public class Main {
          * il problema di questo proggetto è che ho docuto modificare la struttura in corso di svolgimento, la prego
          * di dirmi in qualsiasi caso tutto quello che non va bene
          * per comodità ho usato parti di codice fatto in classe(è già commentato ed è testato)
+         *
          * Le implementazioni principali sono:
         * L'Observer ApplicazioneClient per simulare una persona da casa che registra e vede la tv
         * Una Factory per i gestori
