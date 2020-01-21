@@ -2,10 +2,13 @@ package Exam.ApplicazioneTv;
 
 import java.util.ArrayList;
 
+/**
+ *
+ */
 public class Canale {
     private String nome;
     private int numero;
-    private ArrayList<Trasmissione> trasmissioni = new ArrayList<Trasmissione>();
+    private ArrayList<Trasmissione> trasmissioni;
 
     public Canale(String nome, int numero, ArrayList<Trasmissione> trasmissioni) {
         this.nome = nome;

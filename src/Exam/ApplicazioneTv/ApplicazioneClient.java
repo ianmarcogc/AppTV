@@ -5,6 +5,9 @@ import Exam.ApplicazioneTv.eccezioni.TipoGestoreNonSupportato;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Avrà la gestione della registrazione, dei parametri della tv e del monitor
+ */
 public class ApplicazioneClient implements Observer{
 
     TV tv;

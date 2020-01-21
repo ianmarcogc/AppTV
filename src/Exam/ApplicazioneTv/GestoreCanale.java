@@ -3,7 +3,9 @@ package Exam.ApplicazioneTv;
 import Exam.ApplicazioneTv.eccezioni.ImpossibileAggiungereAGestore;
 
 import java.util.ArrayList;
-
+/**
+ * Gestisce i canali
+ */
 public class GestoreCanale extends Gestore<Canale>{
 
     ArrayList canali;
